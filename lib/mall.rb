@@ -1,10 +1,10 @@
 class Mall
   @@malls = []
-   attr_reader :name, :description, :num_of_reviews  
-   def initialize(name, description, num_of_reviews)
+   attr_reader :name, :description, :ranking   
+   def initialize(name, description, ranking)
       @name = name 
       @description = description
-      @num_of_reviews = num_of_reviews
+      @ranking = ranking
       @@malls << self 
   end  
 
